@@ -1,0 +1,20 @@
+{
+  "name": "cucumber-pactum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha testAPI.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.5.1",
+    "mocha": "^10.2.0",
+    "pactum": "^3.5.1",
+    "pactum-json-reporter": "^1.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}

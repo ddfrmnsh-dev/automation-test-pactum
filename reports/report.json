@@ -1,0 +1,323 @@
+{
+  "tests": [],
+  "steps": [],
+  "specs": [
+    {
+      "id": "p2jea",
+      "request": {
+        "url": "https://gorest.co.in/public/v2/users",
+        "method": "GET",
+        "path": "/public/v2/users"
+      },
+      "response": {
+        "statusCode": 200,
+        "responseTime": 386
+      },
+      "recorded": {}
+    },
+    {
+      "id": "0cxir",
+      "request": {
+        "url": "https://gorest.co.in/public/v2/users",
+        "method": "POST",
+        "path": "/public/v2/users"
+      },
+      "response": {
+        "statusCode": 422,
+        "responseTime": 288
+      },
+      "recorded": {}
+    },
+    {
+      "id": "rhbuf",
+      "request": {
+        "url": "https://gorest.co.in/public/v2/users",
+        "method": "POST",
+        "path": "/public/v2/users",
+        "headers": {
+          "Authorization": "Bearer b6a644e3ef96461df7e4ada151a9a0917a5109bf899ffd36f5a8adb1c0843790"
+        },
+        "body": {
+          "name": "Dede2",
+          "email": "test3345@gmail.com",
+          "gender": "male",
+          "status": "inactive"
+        }
+      },
+      "response": {
+        "statusCode": 422,
+        "headers": {
+          "date": "Sat, 09 Sep 2023 03:44:16 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "cache-control": "no-cache",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "vary": "Origin",
+          "x-content-type-options": "nosniff",
+          "x-download-options": "noopen",
+          "x-frame-options": "SAMEORIGIN",
+          "x-permitted-cross-domain-policies": "none",
+          "x-ratelimit-limit": "90",
+          "x-ratelimit-remaining": "88",
+          "x-ratelimit-reset": "2",
+          "x-request-id": "740ff840-f230-4f78-91ca-7d2044653d93",
+          "x-runtime": "0.038035",
+          "x-xss-protection": "0",
+          "cf-cache-status": "DYNAMIC",
+          "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=dhE6cjU4PZPyRiko3Io%2Fum6L8O9uMcHV9HcAkeCrnTIREZMssKZmq1zIaExO4j0RMUoS6LdThTJGhLm8HMT%2FguiPz1qLN9Jc491CxRWXyB2skZeveRIMscj%2FzEBRs0E%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+          "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+          "server": "cloudflare",
+          "cf-ray": "803c6e87cf5c06ab-SIN",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "body": [
+          {
+            "field": "email",
+            "message": "has already been taken"
+          }
+        ],
+        "responseTime": 270
+      },
+      "recorded": {}
+    },
+    {
+      "id": "7x7ev",
+      "request": {
+        "url": "https://gorest.co.in/public/v2/users/5130672225",
+        "method": "GET",
+        "path": "/public/v2/users/{id}",
+        "pathParams": {
+          "id": 5130672225
+        },
+        "headers": {
+          "Authorization": "Bearer b6a644e3ef96461df7e4ada151a9a0917a5109bf899ffd36f5a8adb1c0843790"
+        }
+      },
+      "response": {
+        "statusCode": 404,
+        "headers": {
+          "date": "Sat, 09 Sep 2023 03:44:17 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "cache-control": "no-cache",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "vary": "Origin",
+          "x-content-type-options": "nosniff",
+          "x-download-options": "noopen",
+          "x-frame-options": "SAMEORIGIN",
+          "x-permitted-cross-domain-policies": "none",
+          "x-ratelimit-limit": "90",
+          "x-ratelimit-remaining": "87",
+          "x-ratelimit-reset": "3",
+          "x-request-id": "636f04b9-a501-47ae-9d18-e85cf2a07cea",
+          "x-runtime": "0.029649",
+          "x-xss-protection": "0",
+          "cf-cache-status": "DYNAMIC",
+          "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Q2%2F99forKymh1I53PPuG3PhaZRFGH0%2BHY5jMqSARhaLw0VCu2RQ%2BzdZMu3lUi8ANXGJHOln2jSzxCD9Ju3TQWsyTY726c8jMadAECwIO3SY8k1axFs2Qr1vW8dTwyyM%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+          "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+          "server": "cloudflare",
+          "cf-ray": "803c6e896d09879f-SIN",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "body": {
+          "message": "Resource not found"
+        },
+        "responseTime": 284
+      },
+      "recorded": {}
+    },
+    {
+      "id": "uxoxj",
+      "request": {
+        "url": "https://gorest.co.in/public/v2/users/5130675221",
+        "method": "GET",
+        "path": "/public/v2/users/{id}",
+        "pathParams": {
+          "id": 5130675221
+        }
+      },
+      "response": {
+        "statusCode": 404,
+        "responseTime": 279
+      },
+      "recorded": {}
+    },
+    {
+      "id": "nk0tt",
+      "request": {
+        "url": "https://gorest.co.in/public/v2/users/5130685",
+        "method": "PUT",
+        "path": "/public/v2/users/{id}",
+        "pathParams": {
+          "id": 5130685
+        },
+        "headers": {
+          "Authorization": "Bearer b6a644e3ef96461df7e4ada151a9a0917a5109bf899ffd36f5a8adb1c0843790"
+        },
+        "body": {
+          "name": "CRRRR"
+        }
+      },
+      "response": {
+        "statusCode": 200,
+        "headers": {
+          "date": "Sat, 09 Sep 2023 03:44:17 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "cache-control": "max-age=0, private, must-revalidate",
+          "etag": "W/\"2aa5e841a318a002b6b44509bfddc31c\"",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "vary": "Origin",
+          "x-content-type-options": "nosniff",
+          "x-download-options": "noopen",
+          "x-frame-options": "SAMEORIGIN",
+          "x-permitted-cross-domain-policies": "none",
+          "x-ratelimit-limit": "90",
+          "x-ratelimit-remaining": "85",
+          "x-ratelimit-reset": "4",
+          "x-request-id": "4389e17c-103e-44fe-9e00-aee446a82a98",
+          "x-runtime": "0.041781",
+          "x-xss-protection": "0",
+          "cf-cache-status": "DYNAMIC",
+          "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Ub8XPjmpNIbgLFI%2FSiRjDl4%2FolHgAMeMXXhbryOqymKcMUi76euKQnjT%2ByEy2AP4oKjizq%2F85fV4cuuJxgg7MkpTtjgcCROQ3W5TEmv3he6oH%2BT7RDhVMceQQc6yM3U%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+          "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+          "server": "cloudflare",
+          "cf-ray": "803c6e8cfc4a91c6-SIN",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "body": {
+          "name": "CRRRR",
+          "id": 5130685,
+          "email": "test3345211221@gmail.com",
+          "gender": "male",
+          "status": "inactive"
+        },
+        "responseTime": 191
+      },
+      "recorded": {}
+    },
+    {
+      "id": "1hckh",
+      "request": {
+        "url": "https://gorest.co.in/public/v2/users/5130685111",
+        "method": "PUT",
+        "path": "/public/v2/users/{id}",
+        "pathParams": {
+          "id": 5130685111
+        }
+      },
+      "response": {
+        "statusCode": 404,
+        "responseTime": 310
+      },
+      "recorded": {}
+    },
+    {
+      "id": "ymniq",
+      "request": {
+        "url": "https://gorest.co.in/public/v2/users/5130685",
+        "method": "PUT",
+        "path": "/public/v2/users/{id}",
+        "pathParams": {
+          "id": 5130685
+        },
+        "headers": {
+          "Authorization": "Bearer b6a644e3ef96461df7e4ada151a9a0917a5109bf899ffd36f5a8adb1c0843790"
+        }
+      },
+      "response": {
+        "statusCode": 200,
+        "headers": {
+          "date": "Sat, 09 Sep 2023 03:44:18 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "cache-control": "max-age=0, private, must-revalidate",
+          "etag": "W/\"37619b7be04f238dd4a60c9545cff27a\"",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "vary": "Origin",
+          "x-content-type-options": "nosniff",
+          "x-download-options": "noopen",
+          "x-frame-options": "SAMEORIGIN",
+          "x-permitted-cross-domain-policies": "none",
+          "x-ratelimit-limit": "90",
+          "x-ratelimit-remaining": "83",
+          "x-ratelimit-reset": "6",
+          "x-request-id": "d7da4a0b-c538-4fd6-a606-f55cbe399af2",
+          "x-runtime": "0.036739",
+          "x-xss-protection": "0",
+          "cf-cache-status": "DYNAMIC",
+          "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=iOVWHFTC0Lu57QldVgTZpyQO82v7vp%2Bz4BJWyt4cpQBSssazE3z4Y6d%2Bzdo5ds9lfj50OiMMEUrAMT1cwkhJaeP3Q17GlF1w9OgZKjVzbkUf5DjsG3f5V7iW0aiF7K8%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+          "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+          "server": "cloudflare",
+          "cf-ray": "803c6e903b1b3ddc-SIN",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "body": {
+          "id": 5130685,
+          "name": "CRRRR",
+          "email": "test3345211221@gmail.com",
+          "gender": "male",
+          "status": "inactive"
+        },
+        "responseTime": 298
+      },
+      "recorded": {}
+    },
+    {
+      "id": "savny",
+      "request": {
+        "url": "https://gorest.co.in/public/v2/users/5130685",
+        "method": "PUT",
+        "path": "/public/v2/users/{id}",
+        "pathParams": {
+          "id": 5130685
+        },
+        "headers": {
+          "Authorization": "Bearer b6a644e3ef96461df7e4ada151a9a0917a5109bf899ffd36f5a8adb1c0843790"
+        }
+      },
+      "response": {
+        "statusCode": 200,
+        "headers": {
+          "date": "Sat, 09 Sep 2023 03:44:18 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "cache-control": "max-age=0, private, must-revalidate",
+          "etag": "W/\"37619b7be04f238dd4a60c9545cff27a\"",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "vary": "Origin",
+          "x-content-type-options": "nosniff",
+          "x-download-options": "noopen",
+          "x-frame-options": "SAMEORIGIN",
+          "x-permitted-cross-domain-policies": "none",
+          "x-ratelimit-limit": "90",
+          "x-ratelimit-remaining": "82",
+          "x-ratelimit-reset": "6",
+          "x-request-id": "af890ce6-4c08-4e5c-ba3d-5d60f5404220",
+          "x-runtime": "0.048940",
+          "x-xss-protection": "0",
+          "cf-cache-status": "DYNAMIC",
+          "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=TaVmqGKdyO842aJvs2TBh7CgVK%2ByYxVt2ySQLLdaNuItF4jSGLMhctNsMShqSF3nCcMVfpA2bwX%2FqBNfwREOxMyEdXrgVHEy%2BckLOWpjiR8JLq0SPe6Nt4ng6%2FYjBrU%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+          "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+          "server": "cloudflare",
+          "cf-ray": "803c6e923ba98988-SIN",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "body": {
+          "id": 5130685,
+          "name": "CRRRR",
+          "email": "test3345211221@gmail.com",
+          "gender": "male",
+          "status": "inactive"
+        },
+        "responseTime": 195
+      },
+      "recorded": {}
+    }
+  ]
+}
